@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,9 +16,8 @@
 </head>
 
 <body class="container">
-  <div class="card">
-  <?php
-    echo "<form action='https://www.google.co.il/search' class='needs-validation' novalidate> 
+  <div class="card"> <?php
+    echo "<form action='google-submit.php' class='needs-validation' novalidate> 
       <div class='form-group'>
       <div class='card-body'>
         <h5 class=card-title'>Custom Search Page</h5> 
@@ -29,6 +29,7 @@
         Please fill out your search term
         </div>
         <br/>
+         <input type='hidden' name='command' value='searchGoogle'>
         <input type='submit' class='btn btn-info mb-2'>
         </div>
     </form>
@@ -36,12 +37,10 @@
     <br />  
 <h5> today's date: </h5>" . date('l jS \of F Y h:i:s A');
 
- ?>
-
-  </div>
-  <footer class="text-center">
-  All rights reserved <a href="https://www.johnmogi.com" target="_blank">John Mogi</a>  <?php echo date("Y"); ?>
-  </footer>
+ ?> 
+</div>
+  <footer class="text-center"> All rights reserved <a href="https://www.johnmogi.com" target="_blank">John Mogi</a>
+    <?php echo date("Y"); ?> </footer>
 </body>
 
 </html>
