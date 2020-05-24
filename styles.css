@@ -1,0 +1,22 @@
+.card {
+    width: 50rem;
+    margin: 25px auto;
+    padding: 15px;
+}
+
+body {
+    background: url(bing.jpg);
+    background-size: cover;
+}
+
+@media only screen and (max-width: 1180px) {
+    .card {
+        width: 35rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 25rem;
+    }
+}
